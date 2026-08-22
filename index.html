@@ -38,7 +38,7 @@
                 <div class="flex items-center space-x-4">
                     <div class="hidden md:block">
                         <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-sm transition">
-                            Request Quote
+                            Order Now
                         </a>
                     </div>
 
@@ -60,7 +60,7 @@
                 <a href="#contact" class="mobile-link block hover:text-emerald-600 py-1 transition">Contact</a>
                 <div class="pt-3 border-t border-slate-100">
                     <a href="#contact" class="mobile-link block text-center bg-emerald-600 text-white py-2.5 rounded-lg font-medium shadow">
-                        Request Quote
+                        Order Now
                     </a>
                 </div>
             </div>
@@ -284,9 +284,9 @@
                 <!-- Info Side -->
                 <div>
                     <h2 class="text-emerald-600 font-semibold tracking-wide uppercase text-sm mb-2">Get in Touch</h2>
-                    <h3 class="text-3xl font-extrabold text-slate-900 mb-6">Let's Discuss Your Supply Requirements</h3>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mb-6">Place Your Produce Order</h3>
                     <p class="text-slate-600 mb-8 leading-relaxed">
-                        Whether you are responding to an institutional tender, setting up a routine procurement contract for your restaurant chain, or exploring bulk delivery options in Lusaka, our team is ready to assist you.
+                        Fill out the order form with your specific produce requirements and quantities. Submitting will send your order directly to our WhatsApp line for instant processing in Lusaka.
                     </p>
 
                     <div class="space-y-6">
@@ -324,27 +324,27 @@
 
                 <!-- Form Side -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                    <h4 class="text-xl font-bold text-slate-900 mb-6">Request a Quotation / Order Inquiry</h4>
-                    <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been submitted to Aro Multiexpress Trading.');" class="space-y-4">
+                    <h4 class="text-xl font-bold text-slate-900 mb-6">Direct WhatsApp Order Form</h4>
+                    <form id="whatsapp-order-form" class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium text-slate-700 mb-1">Institution / Business Name</label>
-                            <input type="text" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. Grand Restaurant / Ministry Dept">
+                            <input type="text" id="business-name" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. Grand Restaurant / Ministry Dept">
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-1">Contact Person</label>
-                                <input type="text" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Full Name">
+                                <input type="text" id="contact-person" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Full Name">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
-                                <input type="tel" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="+260 97 9743163">
+                                <input type="tel" id="phone-number" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="+260 97 9743163">
                             </div>
                         </div>
 
                         <div>
                             <label class="block text-sm font-medium text-slate-700 mb-1">Category / Institution Type</label>
-                            <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                            <select id="institution-type" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none">
                                 <option>Government Institution / Public Sector</option>
                                 <option>Private Institution / Corporate</option>
                                 <option>Restaurant / Hospitality / Hotel</option>
@@ -353,12 +353,13 @@
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Message / Produce Requirements</label>
-                            <textarea rows="4" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Specify items, frequencies (daily/weekly), and approximate volumes..."></textarea>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Message / Produce Items & Quantities</label>
+                            <textarea rows="4" id="order-items" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Specify items, frequencies (daily/weekly), and approximate volumes..."></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg shadow transition">
-                            Submit Inquiry
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg shadow transition flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Submit Order</span>
                         </button>
                     </form>
                 </div>
@@ -386,7 +387,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu Animation and Toggle -->
+    <!-- JavaScript for Mobile Menu & WhatsApp Order Integration -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -396,7 +397,6 @@
         function toggleMenu() {
             const isOpen = !mobileMenu.classList.contains('hidden');
             if (isOpen) {
-                // Collapse animation
                 mobileMenu.classList.remove('scale-y-100', 'opacity-100');
                 mobileMenu.classList.add('scale-y-0', 'opacity-0');
                 setTimeout(() => {
@@ -405,7 +405,6 @@
                 menuIcon.classList.remove('fa-xmark');
                 menuIcon.classList.add('fa-bars');
             } else {
-                // Expand animation
                 mobileMenu.classList.remove('hidden');
                 setTimeout(() => {
                     mobileMenu.classList.remove('scale-y-0', 'opacity-0');
@@ -418,13 +417,36 @@
 
         menuBtn.addEventListener('click', toggleMenu);
 
-        // Close mobile menu automatically when a link is clicked
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (!mobileMenu.classList.contains('hidden')) {
                     toggleMenu();
                 }
             });
+        });
+
+        // WhatsApp Form Submission Handler
+        const orderForm = document.getElementById('whatsapp-order-form');
+        orderForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const businessName = document.getElementById('business-name').value;
+            const contactPerson = document.getElementById('contact-person').value;
+            const phoneNumber = document.getElementById('phone-number').value;
+            const institutionType = document.getElementById('institution-type').value;
+            const orderItems = document.getElementById('order-items').value;
+
+            // Format message for WhatsApp
+            const whatsappNumber = "260979743163";
+            const message = `*NEW PRODUCE ORDER - ARO MULTIEXPRESS TRADING*%0A%0A` +
+                            `*Business/Institution:* ${encodeURIComponent(businessName)}%0A` +
+                            `*Contact Person:* ${encodeURIComponent(contactPerson)}%0A` +
+                            `*Phone Number:* ${encodeURIComponent(phoneNumber)}%0A` +
+                            `*Category:* ${encodeURIComponent(institutionType)}%0A%0A` +
+                            `*Order / Produce Requirements:*%0A${encodeURIComponent(orderItems)}`;
+
+            // Redirect user to WhatsApp with pre-filled message
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
         });
     </script>
 
