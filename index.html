@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aro Multiexpress Trading | Premium Fresh Produce Supplier</title>
-    <!-- Circled Logo in Browser Tab (Favicon) -->
-    <link rel="icon" type="image/png" href="log.png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,56 +11,33 @@
 <body class="bg-slate-50 text-slate-800 font-sans">
 
     <!-- Header & Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <!-- Logo with 'log.png' -->
-                <div class="flex items-center space-x-2.5">
-                    <img src="log.png" alt="Aro Multiexpress Trading Logo" class="w-10 h-10 object-cover rounded-full border-2 border-emerald-600 shadow-sm">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="bg-emerald-600 text-white p-2 rounded-lg text-2xl font-bold">
+                        <i class="fa-solid fa-carrot"></i>
+                    </div>
                     <div>
-                        <span class="text-lg font-extrabold text-slate-900 tracking-tight leading-none block">Aro Multiexpress</span>
-                        <span class="text-[10px] font-bold text-emerald-600 tracking-wider uppercase">Trading</span>
+                        <span class="text-xl font-extrabold text-slate-900 tracking-tight">Aro Multiexpress</span>
+                        <span class="block text-xs font-semibold text-emerald-600 tracking-wider uppercase">Trading</span>
                     </div>
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
                     <a href="#home" class="hover:text-emerald-600 transition">Home</a>
                     <a href="#about" class="hover:text-emerald-600 transition">About Us</a>
                     <a href="#services" class="hover:text-emerald-600 transition">Who We Serve</a>
                     <a href="#products" class="hover:text-emerald-600 transition">Products</a>
-                    <a href="#order" class="hover:text-emerald-600 transition">Order Form</a>
                     <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
                 </nav>
 
-                <!-- Desktop CTA & Mobile Toggle Button -->
-                <div class="flex items-center space-x-4">
-                    <div class="hidden md:block">
-                        <a href="#order" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-sm transition">
-                            Order Now
-                        </a>
-                    </div>
-
-                    <!-- Mobile Menu Hamburger Button -->
-                    <button id="menu-btn" class="md:hidden text-slate-700 hover:text-emerald-600 focus:outline-none text-2xl p-1 transition">
-                        <i class="fa-solid fa-bars" id="menu-icon"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Animated Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white border-b border-slate-200 shadow-xl transition-all duration-300 ease-in-out transform origin-top scale-y-0 opacity-0">
-            <div class="px-6 py-5 space-y-3 font-medium text-slate-700">
-                <a href="#home" class="mobile-link block hover:text-emerald-600 py-1 transition">Home</a>
-                <a href="#about" class="mobile-link block hover:text-emerald-600 py-1 transition">About Us</a>
-                <a href="#services" class="mobile-link block hover:text-emerald-600 py-1 transition">Who We Serve</a>
-                <a href="#products" class="mobile-link block hover:text-emerald-600 py-1 transition">Products</a>
-                <a href="#order" class="mobile-link block hover:text-emerald-600 py-1 transition">Order Form</a>
-                <a href="#contact" class="mobile-link block hover:text-emerald-600 py-1 transition">Contact</a>
-                <div class="pt-3 border-t border-slate-100">
-                    <a href="#order" class="mobile-link block text-center bg-emerald-600 text-white py-2.5 rounded-lg font-medium shadow">
-                        Order Now
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2.5 rounded-lg shadow-sm transition">
+                        Request Quote
                     </a>
                 </div>
             </div>
@@ -87,11 +62,11 @@
                 <p class="text-lg text-slate-300 mb-8">
                     Aro Multiexpress Trading delivers premium, farm-fresh produce reliably to government bodies, private corporations, hospitals, schools, and elite restaurants.
                 </p>
-                <div class="flex flex-row items-center space-x-3 sm:space-x-4">
-                    <a href="#order" class="flex-1 sm:flex-none bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 sm:px-6 py-3 rounded-lg text-center shadow-lg transition text-sm sm:text-base">
-                        Order Now
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-3 rounded-lg text-center shadow-lg transition">
+                        Partner With Us
                     </a>
-                    <a href="#products" class="flex-1 sm:flex-none bg-white/10 hover:bg-white/25 text-white font-medium px-5 sm:px-6 py-3 rounded-lg text-center backdrop-blur-sm transition border border-white/20 text-sm sm:text-base">
+                    <a href="#products" class="bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 rounded-lg text-center backdrop-blur-sm transition border border-white/20">
                         View Catalog
                     </a>
                 </div>
@@ -191,337 +166,61 @@
         </div>
     </section>
 
-    <!-- Organized Products Catalog with Exact Packaging Units -->
+    <!-- Products Showcase Section -->
     <section id="products" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-emerald-600 font-semibold tracking-wide uppercase text-sm mb-2">Our Catalog</h2>
-                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Fresh Produce, Tubers & Aromatics Inventory</h3>
-                <p class="text-slate-600">Select your required quantity and click <strong>"Add to Order"</strong> to compile your instant WhatsApp order list.</p>
+                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Fresh Produce Categories</h3>
+                <p class="text-slate-600">Sourced directly from certified growers to preserve maximum nutritional value and taste.</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- 1. Fresh Tomatoes (Box) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600" alt="Fresh Tomatoes" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Vegetables</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Box</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Fresh Tomatoes</h4>
-                            <p class="text-sm text-slate-600 mb-4">Ripe, grade-A juicy tomatoes.</p>
-                        </div>
+                <!-- Product 1 -->
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=600" alt="Fresh Vegetables" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                     </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Boxes):</span>
-                            <input type="number" id="qty-tomatoes" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Fresh Tomatoes', 'Box', 'qty-tomatoes')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Root & Leafy</span>
+                        <h4 class="text-lg font-bold text-slate-900 mt-1 mb-2">Essential Vegetables</h4>
+                        <p class="text-sm text-slate-600">Tomatoes, onions, potatoes, cabbage, spinach, carrots, and peppers supplied in bulk quantities.</p>
                     </div>
                 </div>
 
-                <!-- 2. Onion Red/White (Bag) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&q=80&w=600" alt="Fresh Onions" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Vegetables</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Bag</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Onion Red / White</h4>
-                            <p class="text-sm text-slate-600 mb-4">High-quality, long-shelf-life onions.</p>
-                        </div>
+                <!-- Product 2 -->
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&q=80&w=600" alt="Fresh Fruits" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                     </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Bags):</span>
-                            <input type="number" id="qty-onions" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Onion Red/White', 'Bag', 'qty-onions')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Orchard Fresh</span>
+                        <h4 class="text-lg font-bold text-slate-900 mt-1 mb-2">Tropical & Local Fruits</h4>
+                        <p class="text-sm text-slate-600">Bananas, apples, oranges, pineapples, watermelon, and seasonal varieties hand-picked for quality.</p>
                     </div>
                 </div>
 
-                <!-- 3. Fresh Cabbage (Head) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&q=80&w=600" alt="Fresh Cabbage" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Vegetables</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Head</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Fresh Cabbage</h4>
-                            <p class="text-sm text-slate-600 mb-4">Crisp, farm-fresh green cabbages.</p>
-                        </div>
+                <!-- Product 3 -->
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518977676601-b5fcc82aba01?auto=format&fit=crop&q=80&w=600" alt="Bulk Tubers" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                     </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Heads):</span>
-                            <input type="number" id="qty-cabbage" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Fresh Cabbage', 'Head', 'qty-cabbage')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Staples</span>
+                        <h4 class="text-lg font-bold text-slate-900 mt-1 mb-2">Bulk Tubers & Grains</h4>
+                        <p class="text-sm text-slate-600">High-grade sweet potatoes, yams, and dry goods optimized for massive institutional meal prep.</p>
                     </div>
                 </div>
 
-                <!-- 4. Irish Potatoes (Bag) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1518977676601-b5fcc82aba01?auto=format&fit=crop&q=80&w=600" alt="Irish Potatoes" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Tubers</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Bag</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Irish Potatoes</h4>
-                            <p class="text-sm text-slate-600 mb-4">Clean, sorted Irish potatoes.</p>
-                        </div>
+                <!-- Product 4 -->
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&q=80&w=600" alt="Herbs and Spices" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                     </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Bags):</span>
-                            <input type="number" id="qty-potatoes" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Irish Potatoes', 'Bag', 'qty-potatoes')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 5. Sweet Peppers (Box) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&q=80&w=600" alt="Sweet Peppers" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Vegetables</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Box</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Sweet Green/Red Peppers</h4>
-                            <p class="text-sm text-slate-600 mb-4">Vibrant, crisp bell peppers.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Boxes):</span>
-                            <input type="number" id="qty-peppers" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Sweet Green/Red Peppers', 'Box', 'qty-peppers')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 6. Spinach & Rape (Bundle) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&q=80&w=600" alt="Leafy Greens" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Leafy Greens</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Bundle</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Spinach & Rape</h4>
-                            <p class="text-sm text-slate-600 mb-4">Tender, freshly harvested greens.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Bundles):</span>
-                            <input type="number" id="qty-greens" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Spinach & Rape', 'Bundle', 'qty-greens')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 7. Fresh Garlic (Net) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?auto=format&fit=crop&q=80&w=600" alt="Fresh Garlic" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Aromatics</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Net</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Fresh Garlic</h4>
-                            <p class="text-sm text-slate-600 mb-4">Pungent, high-grade whole garlic.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Nets):</span>
-                            <input type="number" id="qty-garlic" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Fresh Garlic', 'Net', 'qty-garlic')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 8. Fresh Ginger Roots (Kg) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f1?auto=format&fit=crop&q=80&w=600" alt="Fresh Ginger" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Aromatics</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Kg</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Fresh Ginger Roots</h4>
-                            <p class="text-sm text-slate-600 mb-4">Clean, aromatic ginger roots.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Kgs):</span>
-                            <input type="number" id="qty-ginger" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Fresh Ginger Roots', 'Kg', 'qty-ginger')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 9. Coriander & Mint (Bunch) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&q=80&w=600" alt="Fresh Herbs" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Herbs</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Bunch</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Coriander & Mint</h4>
-                            <p class="text-sm text-slate-600 mb-4">Fragrant culinary green herbs.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Bunches):</span>
-                            <input type="number" id="qty-herbs" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Coriander & Mint', 'Bunch', 'qty-herbs')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 10. Sweet Bananas (Box/Cluster) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&q=80&w=600" alt="Fresh Bananas" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Fruits</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Cluster/Box</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Sweet Bananas</h4>
-                            <p class="text-sm text-slate-600 mb-4">Fresh sweet bananas.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity:</span>
-                            <input type="number" id="qty-bananas" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Sweet Bananas', 'Cluster/Box', 'qty-bananas')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 11. Crisp Apples (Carton) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&q=80&w=600" alt="Fresh Apples" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Fruits</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Carton</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Crisp Apples</h4>
-                            <p class="text-sm text-slate-600 mb-4">Crunchy and sweet apples.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Cartons):</span>
-                            <input type="number" id="qty-apples" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Crisp Apples', 'Carton', 'qty-apples')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 12. Fresh Watermelon (Unit) -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&q=80&w=600" alt="Fresh Watermelon" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Fruits</span>
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full">Unit: Piece</span>
-                            </div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Fresh Watermelon</h4>
-                            <p class="text-sm text-slate-600 mb-4">Large, sweet watermelons.</p>
-                        </div>
-                    </div>
-                    <div class="px-5 pb-5 space-y-3">
-                        <div class="flex items-center justify-between bg-white px-3 py-2 rounded-lg border border-slate-200">
-                            <span class="text-xs font-medium text-slate-600">Quantity (Pieces):</span>
-                            <input type="number" id="qty-watermelon" min="1" value="1" class="w-16 text-center font-bold text-slate-800 bg-slate-100 rounded border border-slate-300 py-1 focus:outline-none">
-                        </div>
-                        <button onclick="addProduceToOrder('Fresh Watermelon', 'Piece', 'qty-watermelon')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-lg text-sm shadow transition flex items-center justify-center space-x-1.5">
-                            <i class="fa-solid fa-cart-plus"></i>
-                            <span>Add to Order</span>
-                        </button>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Aromatics</span>
+                        <h4 class="text-lg font-bold text-slate-900 mt-1 mb-2">Fresh Herbs & Spices</h4>
+                        <p class="text-sm text-slate-600">Garlic, ginger, fresh coriander, mint, and culinary herbs customized for fine dining restaurants.</p>
                     </div>
                 </div>
             </div>
@@ -552,95 +251,90 @@
         </div>
     </section>
 
-    <!-- Separate Order Section -->
-    <section id="order" class="py-20 bg-slate-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-emerald-600 font-semibold tracking-wide uppercase text-sm mb-2">Direct WhatsApp Ordering</h2>
-                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Place Your Produce Order</h3>
-                <p class="text-slate-600 leading-relaxed">
-                    Fill out the order form with your specific product/items requirements and quantities. Submitting will send your order directly to our WhatsApp line for instant processing.
-                    <br><strong class="text-slate-800">We supply Lusaka and outside Lusaka.</strong>
-                </p>
-            </div>
-
-            <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-sm border border-slate-200">
-                <form id="whatsapp-order-form" class="space-y-6">
-                    <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-1">Institution / Business Name</label>
-                        <input type="text" id="business-name" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. Grand Restaurant / Ministry Dept">
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Contact Person</label>
-                            <input type="text" id="contact-person" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Full Name">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
-                            <input type="tel" id="phone-number" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="+260 97 9743163">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-1">Category / Institution Type</label>
-                        <select id="institution-type" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none">
-                            <option>Government Institution / Public Sector</option>
-                            <option>Private Institution / Corporate</option>
-                            <option>Restaurant / Hospitality / Hotel</option>
-                            <option>Other Bulk Inquiry</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <div class="flex justify-between items-center mb-1">
-                            <label class="block text-sm font-medium text-slate-700">Product / Items Requirements & Quantities</label>
-                            <button type="button" onclick="clearOrderItems()" class="text-xs text-rose-600 hover:underline">Clear Items</button>
-                        </div>
-                        <textarea rows="5" id="order-items" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Select quantities and click 'Add to Order' on any product above, or type requirements here..."></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3.5 rounded-lg shadow-lg transition flex items-center justify-center space-x-2 text-base">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        <span>Submit Order</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Separate Contact Section (Contact and Location Only) -->
-    <section id="contact" class="py-20 bg-white border-t border-slate-200">
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-emerald-600 font-semibold tracking-wide uppercase text-sm mb-2">Get in Touch</h2>
-                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Contact & Location</h3>
-                <p class="text-slate-600">Reach out to our main office or contact lines for general partnerships, inquiries, and corporate administration.</p>
-            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info Side -->
+                <div>
+                    <h2 class="text-emerald-600 font-semibold tracking-wide uppercase text-sm mb-2">Get in Touch</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mb-6">Let's Discuss Your Supply Requirements</h3>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Whether you are responding to an institutional tender, setting up a routine procurement contract for your restaurant chain, or exploring bulk delivery options in Lusaka, our team is ready to assist you.
+                    </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Location -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex items-start space-x-5">
-                    <div class="bg-emerald-100 text-emerald-600 p-4 rounded-xl text-2xl">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold text-slate-900 mb-1">Office Location</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Lusaka, Zambia</p>
-                        <span class="inline-block mt-3 text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">Serving Local & Out-of-Town Clients</span>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-emerald-100 text-emerald-600 p-3 rounded-lg text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Office Location</h4>
+                                <p class="text-slate-600 text-sm">Lusaka, Zambia</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-emerald-100 text-emerald-600 p-3 rounded-lg text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Phone Inquiries</h4>
+                                <p class="text-slate-600 text-sm">+260 97 9743163</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-emerald-100 text-emerald-600 p-3 rounded-lg text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Email Address</h4>
+                                <p class="text-slate-600 text-sm">aronlisomona24@gmail.com</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex items-start space-x-5">
-                    <div class="bg-emerald-100 text-emerald-600 p-4 rounded-xl text-2xl">
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold text-slate-900 mb-1">Direct Lines</h4>
-                        <p class="text-slate-600 text-sm mb-1"><strong class="text-slate-700">Phone:</strong> +260 97 9743163</p>
-                        <p class="text-slate-600 text-sm"><strong class="text-slate-700">Email:</strong> aronlisomona24@gmail.com</p>
-                    </div>
+                <!-- Form Side -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <h4 class="text-xl font-bold text-slate-900 mb-6">Request a Quotation / Order Inquiry</h4>
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been submitted to Aro Multiexpress Trading.');" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Institution / Business Name</label>
+                            <input type="text" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="e.g. Grand Restaurant / Ministry Dept">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Contact Person</label>
+                                <input type="text" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Full Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
+                                <input type="tel" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="+260 97 9743163">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Category / Institution Type</label>
+                            <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                                <option>Government Institution / Public Sector</option>
+                                <option>Private Institution / Corporate</option>
+                                <option>Restaurant / Hospitality / Hotel</option>
+                                <option>Other Bulk Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Message / Produce Requirements</label>
+                            <textarea rows="4" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="Specify items, frequencies (daily/weekly), and approximate volumes..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg shadow transition">
+                            Submit Inquiry
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -651,7 +345,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <div class="flex items-center space-x-3">
-                    <img src="log.png" alt="Logo" class="w-8 h-8 object-cover rounded-full border border-emerald-500">
+                    <div class="bg-emerald-600 text-white p-2 rounded-lg text-lg font-bold">
+                        <i class="fa-solid fa-carrot"></i>
+                    </div>
                     <span class="text-white font-bold text-lg">Aro Multiexpress Trading</span>
                 </div>
                 <div class="text-sm text-center">
@@ -665,91 +361,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript for Mobile Menu, Produce Unit Order & WhatsApp Submissions -->
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        function toggleMenu() {
-            const isOpen = !mobileMenu.classList.contains('hidden');
-            if (isOpen) {
-                mobileMenu.classList.remove('scale-y-100', 'opacity-100');
-                mobileMenu.classList.add('scale-y-0', 'opacity-0');
-                setTimeout(() => {
-                    mobileMenu.classList.add('hidden');
-                }, 300);
-                menuIcon.classList.remove('fa-xmark');
-                menuIcon.classList.add('fa-bars');
-            } else {
-                mobileMenu.classList.remove('hidden');
-                setTimeout(() => {
-                    mobileMenu.classList.remove('scale-y-0', 'opacity-0');
-                    mobileMenu.classList.add('scale-y-100', 'opacity-100');
-                }, 10);
-                menuIcon.classList.remove('fa-bars');
-                menuIcon.classList.add('fa-xmark');
-            }
-        }
-
-        menuBtn.addEventListener('click', toggleMenu);
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (!mobileMenu.classList.contains('hidden')) {
-                    toggleMenu();
-                }
-            });
-        });
-
-        // Function to add specific quantity and package unit to order textarea
-        function addProduceToOrder(productName, unitName, qtyInputId) {
-            const qtyValue = document.getElementById(qtyInputId).value || 1;
-            const orderTextarea = document.getElementById('order-items');
-            const currentText = orderTextarea.value.trim();
-            
-            const itemString = `- ${qtyValue} ${unitName}(s) of ${productName}`;
-
-            if (currentText === "") {
-                orderTextarea.value = itemString;
-            } else {
-                orderTextarea.value = currentText + `\n` + itemString;
-            }
-
-            // Smooth scroll down to order section
-            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function clearOrderItems() {
-            document.getElementById('order-items').value = "";
-        }
-
-        // WhatsApp Form Submission Handler
-        const orderForm = document.getElementById('whatsapp-order-form');
-        orderForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const businessName = document.getElementById('business-name').value;
-            const contactPerson = document.getElementById('contact-person').value;
-            const phoneNumber = document.getElementById('phone-number').value;
-            const institutionType = document.getElementById('institution-type').value;
-            const orderItems = document.getElementById('order-items').value;
-
-            // Format message for WhatsApp
-            const whatsappNumber = "260979743163";
-            const message = `*NEW PRODUCE ORDER - ARO MULTIEXPRESS TRADING*%0A%0A` +
-                            `*Business/Institution:* ${encodeURIComponent(businessName)}%0A` +
-                            `*Contact Person:* ${encodeURIComponent(contactPerson)}%0A` +
-                            `*Phone Number:* ${encodeURIComponent(phoneNumber)}%0A` +
-                            `*Category:* ${encodeURIComponent(institutionType)}%0A%0A` +
-                            `*Product / Items Requirements:*%0A${encodeURIComponent(orderItems)}`;
-
-            // Redirect user to WhatsApp with pre-filled message
-            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
-        });
-    </script>
 
 </body>
 </html>
